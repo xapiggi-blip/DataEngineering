@@ -1,0 +1,10 @@
+1.-Run docker with the python:3.13 image. Use an entrypoint bash to interact with the container.
+
+What's the version of pip in the image?
+
+docker run -it --rm --entrypoint bash python:3.13
+
+pip 24.2 from /usr/local/lib/python3.13/site-packages/pip (python 3.13)
+
+R = 24.2
+
