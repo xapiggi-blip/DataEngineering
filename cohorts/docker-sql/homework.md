@@ -153,7 +153,6 @@ Answers:
 - ✅ **terraform init, terraform apply -auto-approve, terraform destroy**
 - terraform import, terraform apply -y, terraform rm
 
-
 ## Submitting the solutions
 
 * Form for submitting: https://courses.datatalks.club/de-zoomcamp-2026/homework/hw1
