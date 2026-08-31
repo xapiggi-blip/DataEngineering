@@ -20,3 +20,5 @@ COPY pipeline.py pipeline.py
 
 # Set entry point
 ENTRYPOINT ["uv", "run", "python", "pipeline.py"]
+
+professional_experience.md
