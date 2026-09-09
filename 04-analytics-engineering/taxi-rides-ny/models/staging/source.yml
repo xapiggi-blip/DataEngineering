@@ -2,4 +2,9 @@ version: 2
 
 sources:
   - name: raw_data
-  - description:  ""
+    description: "Raw data source for NY taxi rides"
+    database: "kestra-sandbox-498900"
+    schema: "ljgm_zoomcamp"
+    tables:
+      - name: "yellow_tripdata_partitioned_clustered"
+      description: "Yellow taxi trip data"
