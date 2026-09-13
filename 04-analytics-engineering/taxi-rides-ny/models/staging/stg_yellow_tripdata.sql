@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('raw', 'yellow_tripdata') }}
+    select * from {{ source('raw_data', 'yellow_tripdata') }}
 ),
 
 renamed as (
@@ -33,10 +33,10 @@ renamed as (
     -- Filter out records with null vendor_id (data quality requirement)
     where vendorid is not null
 )
-
 select * from renamed
 
--- Sample records for dev environment using deterministic date filter
-{% if target.name == 'dev' %}
-where pickup_datetime >= '2019-01-01' and pickup_datetime < '2019-02-01'
+-- Sample records only when requested
+{% if var('use_sample', false) %}
+where pickup_datetime >= '2019-01-01'
+  and pickup_datetime < '2019-02-01'
 {% endif %}
