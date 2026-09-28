@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('raw_data', 'yellow_tripdata_partitioned_clustered') }}
+    select * from {{ source('raw_data', 'yellow_tripdata') }}
 ),
 
 renamed as (
