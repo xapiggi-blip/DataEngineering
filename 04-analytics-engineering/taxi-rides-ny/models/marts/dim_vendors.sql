@@ -11,4 +11,4 @@ vendors as (
     from trips
 )
 
-select * from vendors;
+select * from vendors
