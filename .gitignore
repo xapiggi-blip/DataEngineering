@@ -15,3 +15,11 @@ __pycache__/
 
 # Logs
 *.log
+
+.bruin.yml
+/duckdb.db
+/duckdb.db.wal
+logs/runs
+logs/*.log
+*.py[cod]
+logs/queries
