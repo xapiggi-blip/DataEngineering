@@ -85,7 +85,7 @@ After building your pipeline, you want to visualize the dependency graph between
 
 - `bruin graph`
 - `bruin dependencies`
-- `bruin lineage`
+- ✅`bruin lineage`
 - `bruin show`
 
 ---
